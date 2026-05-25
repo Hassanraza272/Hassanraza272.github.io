@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3668062681935195"
+     crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Sensitivity Configurator - TipsHub</title>
+    <style>
+        body { background-color: #0b0c10; color: #c5c6c7; font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; }
+        header { background-color: #1f2833; padding: 20px; text-align: center; border-bottom: 3px solid #ff0055; }
+        h1 { color: #66fcf1; margin: 0; font-size: 2.5rem; text-shadow: 0 0 10px #66fcf1; }
+        nav { background-color: #111; padding: 12px; text-align: center; border-bottom: 1px solid #ffbd03; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+        nav a { color: #fff; text-decoration: none; font-weight: bold; padding: 5px 10px; font-size: 16px; }
+        nav a:hover, nav a.active { color: #ff0055; text-shadow: 0 0 8px #ff0055; }
+        .container { max-width: 1000px; margin: 30px auto; padding: 0 20px; }
+        h2 { color: #ffbd03; border-left: 5px solid #ffbd03; padding-left: 10px; }
+        .adsense-container { margin: 25px auto; text-align: center; padding: 10px; background-color: #121212; border: 1px dashed #333; border-radius: 6px; }
+        .ad-label { display: block; font-size: 10px; color: #555; text-transform: uppercase; margin-bottom: 5px; }
+        .responsive-ad-slot { display: inline-block; width: 100%; max-width: 728px; min-height: 90px; background-color: #1a1a1a; color: #555; line-height: 90px; font-size: 13px; }
+        .btn-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; margin: 20px 0; }
+        .btn { background-color: #ff0055; color: white; border: none; padding: 12px 15px; font-weight: bold; cursor: pointer; border-radius: 4px; }
+        .btn:hover { background-color: #ffbd03; color: black; }
+        .sensi-display { background-color: #121212; padding: 25px; border-radius: 8px; border: 1px dashed #ffbd03; min-height: 180px; }
+        footer { background-color: #111; padding: 30px 20px; text-align: center; margin-top: 50px; font-size: 14px; }
+        .policy-links a { color: #66fcf1; text-decoration: none; margin: 0 10px; }
+    </style>
+</head>
+<body>
+    <header><h1>DEVICE SENSITIVITY HUB</h1></header>
+    <nav>
+        <a href="index.html">🏠 Home</a>
+        <a href="cs-combinations.html">⚔️ CS Combos</a>
+        <a href="br-combinations.html">🏆 BR Combos</a>
+        <a href="sensitivity.html" class="active">🎯 Sensitivity</a>
+        <a href="tricks.html">🔥 Headshot Tricks</a>
+    </nav>
+    <div class="container">
+        <h2>🎯 Advanced Hardware Specific Settings (Brand & RAM Basis)</h2>
+        <div class="btn-grid">
+            <button class="btn" onclick="getSensi('low')">📱 Low-End Spec (2GB-4GB RAM)</button>
+            <button class="btn" onclick="getSensi('infinix')">⚡ Infinix / Tecno Devices</button>
+            <button class="btn" onclick="getSensi('xiaomi')">🔥 Xiaomi / Redmi Series</button>
+            <button class="btn" onclick="getSensi('samsung')">💎 Samsung / Vivo Models</button>
+            <button class="btn" onclick="getSensi('ios')">🍏 iPhone / iOS Core</button>
+            <button class="btn" onclick="getSensi('pc')">🖥️ Emulator BlueStacks Spec</button>
+        </div>
+        
+        <div class="sensi-display" id="sensiBox"><p style="text-align: center; color: #666;">Select a device architecture panel to build custom registry configs...</p></div>
+
+        <!-- SENSI INTERSTITIAL AD SLOT -->
+        <div class="adsense-container">
+            <span class="ad-label">Advertisement</span>
+            <div class="responsive-ad-slot">[Sensitivity Dynamic Inline Ad Box Block]</div>
+        </div>
+
+    </div>
+    <footer>
+        <p>&copy; 2026 TipsHub FF Pro.</p>
+        <div class="policy-links"><a href="privacy.html">Privacy Policy</a> | <a href="disclaimer.html">Disclaimer</a></div>
+    </footer>
+    <script>
+        function getSensi(type) {
+            let box = document.getElementById('sensiBox');
+            if(type === 'low') { box.innerHTML = `<h3>🚀 Low-End Config (TipsHub Budget Spec)</h3><p><strong>General:</strong> 100 | <strong>Red Dot:</strong> 98 | <strong>2X:</strong> 95 | <strong>4X:</strong> 90</p><p style="color:#ffbd03;">*HUD Trick: Set fire button to 46% for maximizing quick lift movement.</p>`; }
+            else if(type === 'infinix') { box.innerHTML = `<h3>⚡ Infinix & Tecno Optimization</h3><p><strong>General:</strong> 98 | <strong>Red Dot:</strong> 94 | <strong>2X Scope:</strong> 88 | <strong>4X Scope:</strong> 85</p><p style="color:#ffbd03;">*Pro Tip: Increase pointer speed to max inside language and input settings.</p>`; }
+            else if(type === 'xiaomi') { box.innerHTML = `<h3>🔥 Xiaomi / Redmi Macro Setup</h3><p><strong>General:</strong> 93 | <strong>Red Dot:</strong> 89 | <strong>2X Scope:</strong> 84 | <strong>4X Scope:</strong> 80</p><p style="color:#ffbd03;">*DPI Tweak: Set small-width to 410 inside Developer Options if frames drop.</p>`; }
+            else if(type === 'samsung') { box.innerHTML = `<h3>💎 Samsung & Vivo Stability Profile</h3><p><strong>General:</strong> 95 | <strong>Red Dot:</strong> 91 | <strong>2X Scope:</strong> 86 | <strong>4X Scope:</strong> 82</p>`; }
+            else if(type === 'ios') { box.innerHTML = `<h3>🍏 iOS Premium Sensitivity (No-Recoil)</h3><p><strong>General:</strong> 84 | <strong>Red Dot:</strong> 78 | <strong>2X Scope:</strong> 72 | <strong>4X Scope:</strong> 68</p><p style="color:#ffbd03;">*Touch Hack: Set Haptic Touch response speed to 'Fast'.</p>`; }
+            else if(type === 'pc') { box.innerHTML = `<h3>🖥️ Emulator BlueStacks X/Y Matrix</h3><p><strong>General:</strong> 40 | <strong>Red Dot:</strong> 35 | <strong>X-Sensitivity:</strong> 1.15 | <strong>Y-Sensitivity:</strong> 2.35</p><p style="color:#ffbd03;">*Mouse Spec: 800 DPI with 1000Hz polling rate engine configuration.</p>`; }
+        }
+    </script>
+</body>
+</html>
